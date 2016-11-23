@@ -1,0 +1,26 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 10px;
+    padding-bottom: 180px;
+    background-repeat:no-repeat;
+    -moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+}
+
+.weather.panel {
+    /*font-weight: lighter !important;*/
+}
+
+.navbar-text{
+    margin-left: 425px;
+}
+
+.navbar-default{
+    background-color: #ffffb3;
+}
+.panel-heading{
+    background-color: #d9ffcc;
+}
