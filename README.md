@@ -1,9 +1,6 @@
 * Application is built using angularJS
 * Application is built using angular-seed as a basic structure
-* Application uses OpenWeatherMap API
-* Application uses Bootstrap for designng the UI elements
-* Application has Jasmine test cases written for controllers
-* Application uses iso-3166-country-codes-angular to maintain the list of countries as a part of the search module
+* Application uses JSON mocked as stub data taken as a response from http://localhost:8080/products
 
 ## Pre requisite
 

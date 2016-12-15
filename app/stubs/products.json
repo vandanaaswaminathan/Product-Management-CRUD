@@ -1,0 +1,49 @@
+{
+  "_embedded" : {
+    "products" : [ {
+      "id" : 1,
+      "title" : "Red Alexander Wang Dress",
+      "price" : 1200,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/products/1"
+        },
+        "product" : {
+          "href" : "http://localhost:8080/products/1"
+        }
+      }
+    }, {
+      "id" : 2,
+      "title" : "Blue Chloe Shoe",
+      "price" : 400,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/products/2"
+        },
+        "product" : {
+          "href" : "http://localhost:8080/products/2"
+        }
+      }
+    }, {
+      "id" : 3,
+      "title" : "Yellow Gucci Bag",
+      "price" : 500,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/products/3"
+        },
+        "product" : {
+          "href" : "http://localhost:8080/products/3"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/products"
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/profile/products"
+    }
+  }
+}

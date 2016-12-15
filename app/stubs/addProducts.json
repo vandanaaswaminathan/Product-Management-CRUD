@@ -1,0 +1,13 @@
+{
+  "id" : 4,
+  "title" : "green dress",
+  "price" : 4100,
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/products/4"
+    },
+    "product" : {
+      "href" : "http://localhost:8080/products/4"
+    }
+  }
+}

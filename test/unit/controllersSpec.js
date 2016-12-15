@@ -4,26 +4,22 @@
 
 describe('OpenWeather App controllers', function(){
 
-  beforeEach(module('myWeatherApplication.controllers'));
-  beforeEach(module('myWeatherApplication.services'));
-  beforeEach(module('iso-3166-country-codes'));
+  beforeEach(module('productManagement.controllers'));
+  beforeEach(module('productManagement.services'));
 
-  describe('WeatherApplCtrl', function() {
+  describe('productAppCtrl', function() {
     var $scope, ctrl, $httpBackend;
 
-    beforeEach(module('myWeatherApplication'));
+    beforeEach(module('productManagement'));
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('http://api.openweathermap.org/data/2.5').
-        respond([{forecast: {city: {name: 'London'} } }]);
+      $httpBackend.expectGET('http://localhost:8080/products').
+        respond([{_embedded: {products: {id: 1,title:'Red Alexander Wang Dress',price:1200} } }]);
 
       $scope = $rootScope.$new();
-      ctrl = $controller('WeatherApplCtrl', { $scope: $scope });
+      ctrl = $controller('productAppCtrl', { $scope: $scope });
     }));
 
-//    it('should set the default value of iconBaseUrl', function() {
-//      expect($scope.iconBaseUrl).toBe('http://openweathermap.org/img/w/');
-//    });
   });
 });
